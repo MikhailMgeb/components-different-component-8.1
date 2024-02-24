@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import { Title } from './components/Title/Title';
+
+const titles = [
+  {
+    text: 'Dusty Frontend School',
+    subtitle: 'react',
+  },
+  {
+    text: '123'
+  },
+  {},
+  {
+    subtitle: 'Хинкальный кот'
+  }
+];
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        titles.map((title, index) => <Title key={index} text={title.text} subtitle={title.subtitle}></Title>)
+      }
+      <Title text="Dusty Frontend School" subtitle="react"></Title>
+      <Title text="123"></Title>
+      <Title></Title>
+      <Title subtitle="Хинкальный кот"></Title>
     </div>
   );
 }
 
-export default App;
+export { App };
