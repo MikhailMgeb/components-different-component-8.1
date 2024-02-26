@@ -1,0 +1,11 @@
+.Page-Container {
+    display: flex;
+    justify-content: center
+}
+
+.Page-Task {
+    text-align: center;
+    margin-top: 20px;
+    width: 704px;
+    text-align: left;
+}
