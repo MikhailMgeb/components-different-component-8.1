@@ -6,7 +6,7 @@ export const users = [{
 },
 {
     user: 'Петров Иван',
-    srcPhoto: srcAvatar
+    srcPhoto: ''
 },
 {
     user: 'Сидоров Иван',
@@ -14,6 +14,6 @@ export const users = [{
 },
 {
     user: 'Антонов Иван',
-    srcPhoto: srcAvatar
+    srcPhoto: ''
 }
 ]
