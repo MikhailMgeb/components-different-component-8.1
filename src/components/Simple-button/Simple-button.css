@@ -1,0 +1,10 @@
+.Simple-Button {
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: black;
+}
+
+.Simple-Button_margin {
+    margin-top: 15px;
+}

@@ -1,32 +1,20 @@
 import React from 'react';
-
 import './App.css';
-import { Title } from './components/Title/Title';
+import { SimpleButton } from './components/Simple-button/Simple-button';
+import { Avatar } from './components/Avatar/Avatar';
+import { users } from './components/Avatar/data-users';
 
-const titles = [
-  {
-    text: 'Dusty Frontend School',
-    subtitle: 'react',
-  },
-  {
-    text: '123'
-  },
-  {},
-  {
-    subtitle: 'Хинкальный кот'
-  }
-];
+
 
 const App = () => {
   return (
     <div className="App">
+      <SimpleButton text='hello' />
       {
-        titles.map((title, index) => <Title key={index} text={title.text} subtitle={title.subtitle}></Title>)
+        users.map((user, index) =>
+          <Avatar user={user.user} srcPhoto={user.srcPhoto} key={index}/>
+        )
       }
-      <Title text="Dusty Frontend School" subtitle="react"></Title>
-      <Title text="123"></Title>
-      <Title></Title>
-      <Title subtitle="Хинкальный кот"></Title>
     </div>
   );
 }
