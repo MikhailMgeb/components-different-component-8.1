@@ -1,0 +1,10 @@
+.Page {
+    padding: 100px;
+    background-color: #191919;
+    color: #d4d4d4;
+}
+
+.Page-Title {
+    width: 704px;
+    text-align: left;
+}
