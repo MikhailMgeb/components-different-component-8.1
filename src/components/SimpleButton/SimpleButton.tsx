@@ -1,6 +1,8 @@
-import { cnSimpleButton } from './Simple-button.classname';
 import { FC } from 'react';
-import './Simple-button.css';
+
+import { cnSimpleButton } from './SimpleButton.classname';
+
+import './SimpleButton.css';
 
 type SimpleButtonProps = {
     text: string;

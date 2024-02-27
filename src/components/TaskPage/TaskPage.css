@@ -8,3 +8,8 @@
     width: 704px;
     text-align: left;
 }
+
+.Page-Container {
+    display: flex;
+    justify-content: center;
+}
