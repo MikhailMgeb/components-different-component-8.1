@@ -1,9 +1,9 @@
-.Page-Container {
+.PageContent-Container {
     display: flex;
     justify-content: center
 }
 
-.Page-Task {
+.PageContent-Task {
     text-align: center;
     margin-top: 20px;
     width: 704px;

@@ -1,7 +1,9 @@
 import { FC } from 'react';
+
 import { cnAvatar } from './Avatar.classname';
+import defaultPhoto from './image/icons-default.png';
+
 import './Avatar.css';
-import defaultPhoto from './image/icons8-имя-100.png';
 
 
 type AvatarProps = {

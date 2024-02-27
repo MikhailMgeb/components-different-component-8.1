@@ -1,4 +1,4 @@
-import srcAvatar from "./image/avatar-icon.png";
+import srcAvatar from "./components/Avatar/image/avatar-icon.png";
 
 export const users = [{
     user: 'Иванов Иван',

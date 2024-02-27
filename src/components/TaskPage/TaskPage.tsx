@@ -1,7 +1,9 @@
-import { PageContent } from '../page-content/Page-content';
-import { cnTaskPage } from './Task-page.classname';
 import { FC } from 'react';
-import './Task-page.css';
+
+import { cnPage } from './TaskPage.classname';
+import { PageContent } from '../PageContent/PageContent';
+
+import './TaskPage.css';
 
 type TaskProps = {
     subtitle: string;
@@ -15,8 +17,8 @@ type TaskPageProps = {
 
 const TaskPage: FC<TaskPageProps> = ({ title, tasks }) => {
     return (
-        <main className={cnTaskPage()}>
-            <div className={cnTaskPage('Container')}><h1 className={cnTaskPage('Title')}>{title}</h1></div>
+        <main className={cnPage()}>
+            <div className={cnPage('Container')}><h1 className={cnPage('Title')}>{title}</h1></div>
             {tasks.map((task, index) => <PageContent subtitle={task.subtitle} description={task.description} key={index} />)}
         </main>
     );
